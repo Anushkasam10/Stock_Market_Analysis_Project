@@ -1,0 +1,47 @@
+# 📈 TCS Stock Market Analysis and Forecasting (2020–2025)
+
+## 🗂 Project Overview
+This project focuses on analyzing and forecasting the stock prices of TCS from 2020 to 2025 using time series models and interactive data visualizations.
+
+## 📊 Dashboard
+An interactive dashboard was created using **Streamlit** and **Plotly**, which includes:
+- Line chart of stock prices over time
+- Daily price difference (bar chart)
+- 30-day moving average chart
+- Interactive chart with range slider
+
+## 📉 Model Comparison and Selection
+
+Three models were considered for forecasting TCS stock prices:
+1. **ARIMA (AutoRegressive Integrated Moving Average)**
+2. **Prophet (by Meta/Facebook)**
+3. **LSTM (Long Short-Term Memory Neural Network)**
+
+### ✅ Why ARIMA was chosen:
+- Best performance based on evaluation metrics:
+  **RMSE: 69.47**, **MAE: 61.37**
+- Works well for univariate time series (like closing prices).
+- Simple to implement and interpret.
+- Lightweight — no need for GPU or long training time.
+
+### ❌ Why not Prophet:
+- Faced dependency and installation issues.
+- Produced slightly higher errors than ARIMA when tested previously.
+
+### ❌ Why not LSTM:
+- Required more computational resources and time.
+- Produced less accurate forecasts (higher RMSE and MAE).
+- Not necessary for this relatively stable and clean dataset.
+
+## 📝 Files Included
+- `Dashboard.py`: Streamlit dashboard code
+- `TCS_Cleaned_Data.csv`: Cleaned stock dataset
+- `TCS_Stocks.ipynb`: Data cleaning and preprocessing
+- `TCS_Forecasting_ARIMA.ipynb`: ARIMA modeling and forecasting
+- `README`: Project summary and model justification
+
+---
+
+## ✅ Conclusion
+ARIMA was selected as the final forecasting model for its reliability and superior performance in this scenario. The project includes all components expected in a data analytics pipeline — data cleaning, exploration, visualization, model building, evaluation, and deployment.
+
