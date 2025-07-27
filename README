@@ -10,6 +10,14 @@ An interactive dashboard was created using Streamlit and Plotly, which includes:
 - 30-day moving average chart
 - Interactive chart with range slider
 
+Tableau Dashboard
+
+This is the interactive dashboard created using Tableau for TCS stock market analysis (2020–2025).
+
+- File: `TCS_Dashboard.twbx`  
+ - View online: [Click here](https://public.tableau.com/app/profile/yourusername/viz/yourdashboard)
+
+
 Model Comparison and Selection
 
 Three models were considered for forecasting TCS stock prices:
